@@ -40,7 +40,7 @@ public class Ejercicio3 {
     }
 
     /**
-     * Metodo que segun que opcion lea que haya introducido el usuario por
+     * Metodo que según que opción lea que haya introducido el usuario en
      * @param opc, calculará el area de un cilindro o su volumen
      */
     private static void calculo(int opc) {

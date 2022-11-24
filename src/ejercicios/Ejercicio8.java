@@ -26,6 +26,9 @@ public class Ejercicio8 {
         num2=sc.nextDouble();
 
         System.out.println(calculadora(num1, num2));
+
+        //Cerramos el scanner
+        sc.close();
     }
 
     private static double calculadora(double num1, double num2) {

@@ -22,19 +22,9 @@ public class Ejercicio7 {
         num = sc.nextInt();
 
         System.out.println("El numero tiene " + divisoresPrimos(num) + " divisores primos");
-    }
 
-    public static boolean esPrimo(int n) {
-        //Declaramos las variables
-        boolean esPrimo = true;
-
-        for (int i = 2; i < n; i++) {
-            if (n % i == 0) {
-                esPrimo = false;
-                break;
-            }
-        }
-        return esPrimo;
+        //Cerramos el scanner
+        sc.close();
     }
 
     /**
@@ -47,7 +37,7 @@ public class Ejercicio7 {
 
         for (int divisor = 1; divisor <= n; divisor++) {
             if (n % divisor == 0) {
-                if (esPrimo(divisor) == true) {
+                if (Ejercicio6.esPrimo(divisor)) {
                     contadorDivisoresPrimos++;
                 }
             }

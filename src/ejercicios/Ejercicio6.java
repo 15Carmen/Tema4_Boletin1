@@ -23,6 +23,9 @@ public class Ejercicio6 {
         num = sc.nextInt();
 
         System.out.println(esPrimo(num));
+
+        //Cerramos el scanner
+        sc.close();
     }
 
     /**
@@ -40,8 +43,6 @@ public class Ejercicio6 {
                 break;
             }
         }
-
-        System.out.println(esPrimo ? "Es primo" : "No es primo");
         return esPrimo;
     }
 }

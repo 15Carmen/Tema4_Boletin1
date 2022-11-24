@@ -31,20 +31,22 @@ public class Ejercicio2 {
     }
 
     /**
-     *
-     * @param num1
-     * @param num2
+     * Metodo que va a listar los numeros que hay entre los introducidos por el usuario. Se hará de fprma ascendente o descendente
+     * según cual de los numeros introducidos es mayor. Si
+     * @param num1 es mayor que num2, se hará de forma descendente. Si
+     * @param num2 es mayor que num1, se hará de forma ascendente.
+     * Si ambos numeros introducidos son iguales se lanzará un mensaje de error
      */
     private static void listaNumeros(int num1, int num2) {
-        if (num1>num2){
-            for (int i = num2; i <= num1; i++) {
-                System.out.println(i);
+        if (num1>num2){                             //Si num1 es mayor que num2
+            for (int i = num1; i >= num2; i--) {    //Inicializamos el bucle en num1, lo terminamos en num2 y lo decrementamos en 1
+                System.out.println(i);              //Imprimimos i
             }
-        }else if (num2>num1){
-            for (int i = num1; i <= num2; i++) {
-                System.out.println(i);
+        }else if (num2>num1){                       //Si num2 es mayor que num1
+            for (int i = num1; i <= num2; i++) {    //Inicializamos el bucle en num1, lo terminamos en 2 y lo incrementamos 2 en 1
+                System.out.println(i);              //Imprimimos i
             }
-        }else {
+        }else {                                     //Si los numeros introducidos son iguales imprimimos un mensaje indicando este hecho
             System.out.println("Los numeros son iguales");
         }
     }

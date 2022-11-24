@@ -27,6 +27,9 @@ public class Ejercicio4 {
 
         //Imprimimos el resultado del metodo max() por pantalla
         System.out.println("El numero mayor es " + max(num1, num2));
+
+        //Cerramos el scanner
+        sc.close();
     }
 
     /**
@@ -38,13 +41,12 @@ public class Ejercicio4 {
     private static int max(int num1, int num2) {
 
         //Decalramos las variables
-        int maximo; //Variable donde vamos a guardar el numero mayor
+        int maximo = num2; //Decalramos que el segundo numero es la varaible maximo
 
         if (num1>num2){     //Si el primer numero introducido por el usuario es mayor que el segundo
             maximo=num1;    //Guardamos el primer numero en la variable maximo
-        }else {             //Si no
-            maximo=num2;    //Guardamos el segundo numero en la varaible maximo
         }
+
         return maximo;      //Devolvemos la variable maximo
     }
 }
